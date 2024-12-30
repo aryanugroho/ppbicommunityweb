@@ -8,9 +8,9 @@ import event3 from '@/images/photos/event_3.jpeg'
 
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Event',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'PPBI Kota Bogor - Web Resmi Komunitas PPBI Kota Bogor',
 }
 
 export default function About() {
