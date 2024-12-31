@@ -23,7 +23,7 @@ export default function About() {
           <div className="mt-8 space-y-8">
             <div>
               <h3 className='text-2xl font-bold pt-6 pb-6 mb-4 border-b-2'>Ngasso 2</h3>
-              <div className='grid grid-cols-4 gap-8'>
+              <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-8'>
                 <Image
                   src={event1}
                   alt=""
@@ -54,7 +54,7 @@ export default function About() {
           <div className="mt-8 space-y-8">
             <div>
               <h3 className='text-2xl font-bold pt-6 pb-6 mb-4 border-b-2'>Ngasso 1</h3>
-              <div className='grid grid-cols-4 gap-8'>
+              <div className='grid  md:grid-cols-3 sm:grid-cols-1  gap-8'>
                 <Image
                   src={event1}
                   alt=""

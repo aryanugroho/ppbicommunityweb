@@ -47,12 +47,12 @@ function Photos() {
 
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="-my-4 flex justify-center gap-5 overflow-scroll py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 border-4 border-green-500',
+              'relative aspect-[9/10] w-44 flex-none overflow-scroll rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 border-4 border-green-500',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -120,14 +120,14 @@ export default async function Home() {
       </Container>
       <Container className="mt-24 md:mt-28">
         <h3 className='text-2xl font-bold mt-10 mb-10'>Event</h3>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid gap-4 md:grid-cols-3 sm:grid-cols-1">
           <div className="gap-4 mb-10">
             <div>
               <Image
                 src={event1}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
@@ -138,7 +138,7 @@ export default async function Home() {
                 src={event2}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
@@ -149,7 +149,7 @@ export default async function Home() {
                 src={event3}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
@@ -158,36 +158,36 @@ export default async function Home() {
       </Container>
       <Container>
         <h3 className='text-2xl font-bold mt-10 mb-10'>Kegiatan Sosial</h3>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="flex gap-4 mb-10">
+        <div className="grid md:grid-cols-3 gap-4 sm:grid-cols-1">
+          <div className="gap-4 mb-10">
             <div>
               <Image
                 src={social1}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl max-w-80 md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
           </div>
-          <div className="flex gap-4 mb-10">
+          <div className="gap-4 mb-10">
             <div>
               <Image
                 src={social2}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl max-w-80 md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
           </div>
-          <div className="flex gap-4 mb-10">
+          <div className="gap-4 mb-10">
             <div>
               <Image
                 src={social3}
                 alt=""
                 sizes=""
-                className="object-cover rounded-xl max-w-80"
+                className="object-cover rounded-xl max-w-80 md:max-w-80 sm:max-w-40"
               />
             </div>
             <div className='-mt-20 text-white text-xl p-4 font-bold'>Event Selengkapnya</div>
